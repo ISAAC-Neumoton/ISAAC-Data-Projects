@@ -33,3 +33,5 @@ data['Cabin'] = data['Cabin'].fillna('U')
 print(data.isnull().sum())
 
 print(data.head())
+
+data.to_csv("clean_Titanic_data.csv", index= False)
